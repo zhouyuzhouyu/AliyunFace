@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'AliyunFace_Example' do
+  pod 'AliyunFace', :path => '../'
+
+  target 'AliyunFace_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
