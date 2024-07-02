@@ -28,15 +28,23 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/745611/AliyunFace.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '14.0'
 
   s.source_files = 'AliyunFace/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'AliyunFace' => ['AliyunFace/Assets/*.png']
-  # }
+  s.public_header_files = 'AliyunFace/Classes/**/*.h'
+#  s.platform = :ios, '14.0'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
+
+  # 实人认证SDK framework库
+  s.vendored_frameworks = 'AliyunFace/Products/*.framework'
+  s.resources = 'AliyunFace/Products/**/*.bundle'
+
+  # 系统framework库
+  s.frameworks = 'CoreGraphics', 'Accelerate', 'SystemConfiguration', 'AssetsLibrary',
+                'CoreTelephony', 'QuartzCore', 'CoreFoundation', 'CoreLocation',
+                'ImageIO', 'CoreMedia', 'CoreMotion', 'AVFoundation', 'WebKit',
+                'AudioToolbox', 'CFNetwork', 'MobileCoreServices', 'AdSupport', 'ReplayKit'
+  # 系统C库
+  s.libraries = 'resolv', 'z', 'c++', 'c++.1', 'c++abi', 'z.1.2.8'
 end

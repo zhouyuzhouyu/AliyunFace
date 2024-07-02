@@ -7,12 +7,16 @@
 //
 
 #import "ALAppDelegate.h"
+#import <AliyunFace/AliyunFace.h>
 
 @implementation ALAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [AliyunFaceAuthFacade init];
+    NSDictionary *dic = [AliyunFaceAuthFacade getMetaInfo];
+    NSLog(@"%@",dic);
     return YES;
 }
 

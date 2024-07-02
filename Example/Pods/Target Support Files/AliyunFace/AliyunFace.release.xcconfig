@@ -1,0 +1,17 @@
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/AliyunFace
+DEFINES_MODULE = YES
+EXCLUDED_ARCHS[sdk=iphonesimulator*] = i386
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../AliyunFace/Products"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/AliyunFace" "${PODS_ROOT}/Headers/Public"
+OTHER_LDFLAGS = $(inherited) -l"c++" -l"c++.1" -l"c++abi" -l"resolv" -l"z" -l"z.1.2.8" -framework "AVFoundation" -framework "Accelerate" -framework "AdSupport" -framework "AssetsLibrary" -framework "AudioToolbox" -framework "CFNetwork" -framework "CoreFoundation" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreMedia" -framework "CoreMotion" -framework "CoreTelephony" -framework "ImageIO" -framework "MobileCoreServices" -framework "QuartzCore" -framework "ReplayKit" -framework "SystemConfiguration" -framework "WebKit"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_DEVELOPMENT_LANGUAGE = ${DEVELOPMENT_LANGUAGE}
+PODS_ROOT = ${SRCROOT}
+PODS_TARGET_SRCROOT = ${PODS_ROOT}/../..
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
+SKIP_INSTALL = YES
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

@@ -1,0 +1,16 @@
+PODS:
+  - AliyunFace (0.1.0)
+
+DEPENDENCIES:
+  - AliyunFace (from `../`)
+
+EXTERNAL SOURCES:
+  AliyunFace:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AliyunFace: af0e7ef58a83bcc4c6793dbf120e629fc0f4d4c3
+
+PODFILE CHECKSUM: 18b578ec9d8a6653206158ddba693f53a978561c
+
+COCOAPODS: 1.15.2

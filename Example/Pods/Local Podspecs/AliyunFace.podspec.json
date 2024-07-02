@@ -1,0 +1,56 @@
+{
+  "name": "AliyunFace",
+  "version": "0.1.0",
+  "summary": "A short description of AliyunFace.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/745611/AliyunFace",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "745611": "524112470@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/745611/AliyunFace.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "14.0"
+  },
+  "source_files": "AliyunFace/Classes/**/*",
+  "public_header_files": "AliyunFace/Classes/**/*.h",
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES",
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "i386"
+  },
+  "vendored_frameworks": "AliyunFace/Products/*.framework",
+  "frameworks": [
+    "CoreGraphics",
+    "Accelerate",
+    "SystemConfiguration",
+    "AssetsLibrary",
+    "CoreTelephony",
+    "QuartzCore",
+    "CoreFoundation",
+    "CoreLocation",
+    "ImageIO",
+    "CoreMedia",
+    "CoreMotion",
+    "AVFoundation",
+    "WebKit",
+    "AudioToolbox",
+    "CFNetwork",
+    "MobileCoreServices",
+    "AdSupport",
+    "ReplayKit"
+  ],
+  "libraries": [
+    "resolv",
+    "z",
+    "c++",
+    "c++.1",
+    "c++abi",
+    "z.1.2.8"
+  ]
+}
