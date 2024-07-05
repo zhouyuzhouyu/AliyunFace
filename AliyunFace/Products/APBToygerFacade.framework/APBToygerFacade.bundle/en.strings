@@ -7,11 +7,18 @@
 */
 
 "APBToygerFacade:取消"="Cancel";
+"APBToygerFacade:取消(引导页)"="Cancel";
 "APBToygerFacade:再试一次"="Try Again";
+"APBToygerFacade:再试一次(验证中断)"="Try Again";
+"APBToygerFacade:再试一次(网络中断)"="Try Again";
 "APBToygerFacade:退出"="Quit";
+"APBToygerFacade:退出(无法启动相机)"="Quit";
+"APBToygerFacade:退出(验证中断)"="Quit";
 "APBToygerFacade:确定"="OK";
+"APBToygerFacade:确定(引导页)"="OK";
 "APBToygerFacade:继续"="Continue";
 "APBToygerFacade:我知道了"="Got it";
+"APBToygerFacade:我知道了(系统不支持刷脸)"="Got it";
 "APBToygerFacade:其他登录方式"="Another login method";
 "APBToygerFacade:刷脸失败"="Face scan failed";
 "APBToygerFacade:当前设备不支持刷脸"="Face scan not supported on your device";
@@ -22,7 +29,9 @@
 "APBToygerFacade:刷脸仅在iOS7及以上系统可用"="Face scan is only available on iOS8 or above";
 "APBToygerFacade:系统错误"="System error";
 "APBToygerFacade:确定退出吗?"="Are you sure to quit face scan?";
+"APBToygerFacade:确定退出吗?(引导页)"="Are you sure to quit face scan?";
 "APBToygerFacade:露个脸就能通过"="You can succeed by simply showing your face";
+"APBToygerFacade:露个脸就能通过(引导页)"="You can succeed by simply showing your face";
 "APBToygerFacade:操作超时"="Time out";
 "APBToygerFacade:正对手机,更容易成功"="Face straight at the phone and ensure you have enough light";
 "APBToygerFacade:提示:正对手机,更容易成功"="Face straight at the phone and ensure you have enough light";

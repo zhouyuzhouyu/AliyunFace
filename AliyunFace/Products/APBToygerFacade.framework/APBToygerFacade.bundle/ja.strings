@@ -1,9 +1,16 @@
 "APBToygerFacade:取消"="キャンセル";
+"APBToygerFacade:取消(引导页)"="キャンセル";
 "APBToygerFacade:再试一次"="もう一度お試しください";
+"APBToygerFacade:再试一次(验证中断)"="もう一度お試しください";
+"APBToygerFacade:再试一次(网络中断)"="もう一度お試しください";
 "APBToygerFacade:退出"="終了";
+"APBToygerFacade:退出(无法启动相机)"="終了";
+"APBToygerFacade:退出(验证中断)"="終了";
 "APBToygerFacade:确定"="OK";
+"APBToygerFacade:确定(引导页)"="OK";
 "APBToygerFacade:继续"="続行";
 "APBToygerFacade:我知道了"="OK";
+"APBToygerFacade:我知道了(系统不支持刷脸)"="OK";
 "APBToygerFacade:其他登录方式"="ログイン方法を切り替え";
 "APBToygerFacade:刷脸失败"="顔を認識できませんでした";
 "APBToygerFacade:当前设备不支持刷脸"="お使いのデバイスは顔認識をサポートしていません";
@@ -14,7 +21,9 @@
 "APBToygerFacade:刷脸仅在iOS7及以上系统可用"="顔認識は iOS 7 以降でサポートされています";
 "APBToygerFacade:系统错误"="システムエラー";
 "APBToygerFacade:确定退出吗?"="終了してもよろしいですか";
+"APBToygerFacade:确定退出吗?(引导页)"="終了してもよろしいですか";
 "APBToygerFacade:露个脸就能通过"="顔を見せるだけです";
+"APBToygerFacade:露个脸就能通过(引导页)"="顔を見せるだけです";
 "APBToygerFacade:操作超时"="操作がタイムアウトしました";
 "APBToygerFacade:正对手机,更容易成功"="顔をスキャンしやすいように、電話の方を向いてください";
 "APBToygerFacade:本次操作失败"="操作に失敗しました";

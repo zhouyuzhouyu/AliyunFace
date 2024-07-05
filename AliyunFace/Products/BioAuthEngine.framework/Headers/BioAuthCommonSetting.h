@@ -76,6 +76,7 @@ static NSString *const kBioAuthParamAlertViewSecondButtonTitle = @"kBioAuthParam
 static NSString *const kBioAuthParamAlertViewFirstCallback = @"kBioAuthParamAlertViewFirstCallback";
 static NSString *const kBioAuthParamAlertViewSecondCallback = @"kBioAuthParamAlertViewSecondCallback";
 static NSString *const kBioAuthParamAlertViewLogReason = @"kBioAuthParamAlertViewLogReason";
+static NSString *const kBioAuthParamAlertType = @"kBioAuthParamAlertType";
 
 static NSString *const kBioAuthParamInterrupt = @"interrupt";
 static NSString *const kBioAuthParamCancel = @"cancel";

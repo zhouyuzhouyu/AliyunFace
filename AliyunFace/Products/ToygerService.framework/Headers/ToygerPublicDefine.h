@@ -12,7 +12,7 @@
 //#define USE_PB
 //#define USE_FPP
 #define LOCALVERIFY
-#define USE_SENSOR
+//#define USE_SENSOR
 #define HUMMINGBIRD
 #define ZDOC
 
@@ -45,6 +45,11 @@ typedef NS_ENUM(NSUInteger, ToygerServiceType) {
     ToygerServiceType_Card,
     ToygerServiceType_Face_LocalRegist,
     ToygerServiceType_Face_LocalMatch,
+};
+
+typedef NS_ENUM(NSUInteger, ToygerServiceModelType) {
+    ToygerServiceModelTypeFace = 0,
+    ToygerServiceModelTypeMouth,
 };
 
 typedef NS_ENUM(NSUInteger, TSToygerInitFailType) {

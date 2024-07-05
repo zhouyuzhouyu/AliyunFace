@@ -110,4 +110,6 @@ typedef NS_ENUM(NSInteger, ASSAddressFlag)
 //===================测试联调 api====================//
 - (void)setRpcConfiguration:(NSDictionary *) config;
 
++(BOOL) isSupportFaceShield;
+
 @end

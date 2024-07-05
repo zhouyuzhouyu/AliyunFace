@@ -61,6 +61,11 @@ typedef void (^DTFRpcCompletionBlock)(NSError *error, NSDictionary *data);
 */
 - (void)zimEKYCOCRConfirmIdentify:(NSDictionary *)params completionBlock:(DTFRpcCompletionBlock)blk;
 
+/**
+* oss上传
+*/
+- (void)zimFileUpload:(NSDictionary *)params completionBlock:(DTFRpcCompletionBlock)blk;
+
 
 
 @end

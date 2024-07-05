@@ -10,7 +10,7 @@
 #import "ZimRpcManager.h"
 #import <DTFUtility/DTFFaceIdentityProtocol.h>
 
-//version 2.3.2
+//version 2.3.19
 
 NS_ASSUME_NONNULL_BEGIN
 

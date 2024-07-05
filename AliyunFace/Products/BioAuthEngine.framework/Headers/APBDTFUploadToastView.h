@@ -6,9 +6,12 @@
 //  Copyright © 2018 DTF. All rights reserved.
 //
 #import <UIKit/UIKit.h>
+#import "DTFCustomActivityIndicator.h"
 @interface APBDTFUploadToastView : UIView
 
-@property(nonatomic,strong)UIActivityIndicatorView* indicator;
+@property(nonatomic,strong)UIActivityIndicatorView *indicator;
+
+@property(nonatomic,strong)DTFCustomActivityIndicator *customActivityIndicator;
 
 - (instancetype)initWithFrame:(CGRect)frame;
 

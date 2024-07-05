@@ -11,7 +11,7 @@
 
 @property(nonatomic, strong) NSString *apdidToken;
 @property(nonatomic, strong) NSString *wWORKSPACEID;
-
+@property(nonatomic, assign) NSNumber *isSecuritySDKNumber;
 +(instancetype)getInstance;
 
 - (NSString *)getTokenContent;
@@ -23,5 +23,7 @@
 - (void)ActivityTokenWithParam:(NSDictionary*)param;
 
 - (NSString *)ApperceptRiskwith:(NSInteger)action extParams:(NSDictionary *)args;
+
+- (NSString *)getSecurityChannel;
 
 @end

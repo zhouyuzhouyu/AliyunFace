@@ -8,11 +8,18 @@
 
 
 "APBToygerFacade:取消"="取消";
+"APBToygerFacade:取消(引导页)"="取消";
 "APBToygerFacade:再试一次"="再试一次";
+"APBToygerFacade:再试一次(验证中断)"="再试一次";
+"APBToygerFacade:再试一次(网络中断)"="再试一次";
 "APBToygerFacade:退出"="退出";
+"APBToygerFacade:退出(验证中断)"="退出";
+"APBToygerFacade:退出(无法启动相机)"="退出";
 "APBToygerFacade:确定"="确定";
+"APBToygerFacade:确定(引导页)"="确定";
 "APBToygerFacade:继续"="继续";
 "APBToygerFacade:我知道了"="我知道了";
+"APBToygerFacade:我知道了(系统不支持刷脸)"="我知道了";
 "APBToygerFacade:其他登录方式"="其他登录方式";
 "APBToygerFacade:刷脸失败"="刷脸失败";
 "APBToygerFacade:当前设备不支持刷脸"="当前设备不支持刷脸";
@@ -23,7 +30,9 @@
 "APBToygerFacade:刷脸仅在iOS8及以上版本可用"="刷脸仅在iOS8及以上版本可用";
 "APBToygerFacade:系统错误"="系统错误";
 "APBToygerFacade:确定退出吗?"="确定退出吗?";
+"APBToygerFacade:确定退出吗?(引导页)"="确定退出吗?";
 "APBToygerFacade:露个脸就能通过"="露个脸就能通过";
+"APBToygerFacade:露个脸就能通过(引导页)"="露个脸就能通过";
 "APBToygerFacade:操作超时"="操作超时";
 "APBToygerFacade:正对手机,更容易成功"="正对手机，更容易成功";
 "APBToygerFacade:本次操作失败"="本次操作失败";

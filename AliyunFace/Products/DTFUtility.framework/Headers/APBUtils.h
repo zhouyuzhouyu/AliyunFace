@@ -71,6 +71,13 @@ THREAD_SAFE_SET_OBJECT_FOR_KEY(pipeInfo, key, [NSNumber numberWithInteger:--num]
 __VA_ARGS__; \
 dispatch_semaphore_signal(locker);
 
+@interface DTFAlertTextModel : NSObject
+@property(nonatomic, copy) NSString *title;
+@property(nonatomic, copy) NSString *msg;
+@property(nonatomic, copy) NSString *confirm;
+@property(nonatomic, copy) NSString *cancel;
+@end
+
 @interface APBUtils : NSObject
 
 + (NSString *)MD5WithData:(NSData *)data;
@@ -78,6 +85,10 @@ dispatch_semaphore_signal(locker);
 + (NSString *)randomString:(NSInteger)len;
 
 + (BOOL)isWifi;
+
++ (UIColor*)getColorFromNSString:(NSString*) cString;
+
++ (NSString *)getColorStrFromUIColor:(UIColor *)color;
 
 /**
  *  主线程同步操作，请调用宏版本
@@ -107,5 +118,16 @@ dispatch_semaphore_signal(locker);
 + (NSString *)appVersion;
 
 + (CMVideoDimensions)maxResolution:(AVCaptureDevicePosition) position;
+
++ (void)alertWithAlertModel:(DTFAlertTextModel *)model
+             confirmHandler:(void (^ __nullable)(UIAlertAction * _Nonnull action))confirmHandler
+              cancelHandler:(void (^ __nullable)(UIAlertAction * _Nonnull action))cancelHandler
+             presentHandler:(void (^ __nullable)(UIAlertController * _Nonnull alertController))presentHandler;
+
++ (NSString *)retSubMessageForKey:(NSString *)key;
+
++ (NSString *)codeForKey:(NSString *)key;
+
++ (NSString *)getAppDisplayName;
 
 @end

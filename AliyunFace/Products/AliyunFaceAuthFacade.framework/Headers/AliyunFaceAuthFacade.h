@@ -40,6 +40,10 @@ NS_ASSUME_NONNULL_BEGIN
          extParams:(NSDictionary *)params
       onCompletion:(void (^)(ZIMResponse *response))callback;
 
++ (void)setCustomUI:(nonnull NSString *)configuration type:(nonnull NSString *)type completion:(void(^)(BOOL success, NSError *error))completion;
+
++ (void)setCustomLanguage:(nonnull NSString *)configuration type:(nonnull NSString *)type completion:(void(^)(BOOL success, NSError *error))completion;
+
 @end
 
 NS_ASSUME_NONNULL_END

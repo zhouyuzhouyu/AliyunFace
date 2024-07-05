@@ -15,13 +15,14 @@
 
 @interface ZimInitResponse:NSObject
 @property (nonatomic) SInt32 retCode ;
-@property (nonatomic,strong) NSString* message ;
-@property (nonatomic,strong) NSString* zimId ;
-@property (nonatomic,strong) NSString* protocol ;
-@property (nonatomic,strong) NSDictionary* extParams ;
-@property (nonatomic,strong) NSString* retCodeSub ;
-@property (nonatomic,strong) NSString* retMessageSub ;
-@property (nonatomic,strong) NSString* WishContent;//retMessageSub ;
+@property (nonatomic,strong) NSString *message ;
+@property (nonatomic,strong) NSString *zimId ;
+@property (nonatomic,strong) NSString *protocol ;
+@property (nonatomic,strong) NSDictionary *extParams ;
+@property (nonatomic,strong) NSString *retCodeSub ;
+@property (nonatomic,strong) NSString *retMessageSub ;
+@property (nonatomic,strong) NSString *WishContent;//retMessageSub ;
+@property (nonatomic,strong) NSString *ControlConfig;//retMessageSub ;
 @property (nonatomic,strong) NSString *ImageCount;
 
 + (Class)extParamsElementClass;

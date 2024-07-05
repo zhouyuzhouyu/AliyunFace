@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <BioAuthEngine/DTFUICustomProtocol.h>
+#import <BioAuthEngine/DTFUICustom.h>
+
 
 NS_ASSUME_NONNULL_BEGIN
 typedef void(^DetectImageForOCRInfoBlock)(BOOL success, NSObject * _Nonnull result);
@@ -19,6 +22,7 @@ typedef void(^DetectImageForOCRInfoBlock)(BOOL success, NSObject * _Nonnull resu
 @property(nonatomic, strong) ZimRpcManager * rpcManager;
 @property (nonatomic,strong) NSString * certifyId;
 @property(nonatomic, assign) BOOL isClose;
+@property(nonatomic, strong) id<DTFUICustomProtocol> customProtocol;
 
 @end
 

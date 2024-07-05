@@ -1,9 +1,16 @@
 "APBToygerFacade:取消"="취소";
+"APBToygerFacade:取消(引导页)"="취소";
 "APBToygerFacade:再试一次"="다시 시도하세요";
+"APBToygerFacade:再试一次(验证中断)"="다시 시도하세요";
+"APBToygerFacade:再试一次(网络中断)"="다시 시도하세요";
 "APBToygerFacade:退出"="종료";
+"APBToygerFacade:退出(无法启动相机)"="종료";
+"APBToygerFacade:退出(验证中断)"="종료";
 "APBToygerFacade:确定"="확인";
+"APBToygerFacade:确定(引导页)"="확인";
 "APBToygerFacade:继续"="계속";
 "APBToygerFacade:我知道了"="확인";
+"APBToygerFacade:我知道了(系统不支持刷脸)"="확인";
 "APBToygerFacade:其他登录方式"="로그온 방법 전환";
 "APBToygerFacade:刷脸失败"="안면 인식에 실패했습니다";
 "APBToygerFacade:当前设备不支持刷脸"="귀하의 디바이스는 안면 인식을 지원하지 않습니다";
@@ -14,7 +21,9 @@
 "APBToygerFacade:刷脸仅在iOS7及以上系统可用"="iOS 7 및 그 이상의 버전에서만 안면 인식이 지원됩니다";
 "APBToygerFacade:系统错误"="시스템 오류";
 "APBToygerFacade:确定退出吗?"="정말로 종료하시겠습니까?";
+"APBToygerFacade:确定退出吗?(引导页)"="정말로 종료하시겠습니까?";
 "APBToygerFacade:露个脸就能通过"="얼굴만 보여주시면 됩니다";
+"APBToygerFacade:露个脸就能通过(引导页)"="얼굴만 보여주시면 됩니다";
 "APBToygerFacade:操作超时"="작업 시간이 초과되었습니다";
 "APBToygerFacade:正对手机,更容易成功"="얼굴을 더 쉽게 스캔할 수 있도록 휴대전화를 정면으로 바라보세요";
 "APBToygerFacade:本次操作失败"="작동에 실패했습니다";

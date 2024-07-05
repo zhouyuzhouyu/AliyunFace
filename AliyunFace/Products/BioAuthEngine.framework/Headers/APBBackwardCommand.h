@@ -20,7 +20,6 @@ typedef NS_ENUM(NSInteger, APBBackwardCommandType) {
     BACKWARD_COMMNAD_STOP_SCANCE =          401,        //关闭扫描
     BACKWARD_COMMNAD_OCRUPLOAD_DATA =       402,        //EKYC OCR上传
     BACKWARD_COMMNAD_OCRUPLOADCONFIRM_DATA =       403,        //EKYC OCR确认
-
 };
 
 typedef NS_ENUM(NSInteger, APBTimerCommandType) {

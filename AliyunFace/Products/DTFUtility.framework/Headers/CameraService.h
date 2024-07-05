@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
-
+#import "DTFChameleonUtilsModel.h"
 #if defined(__cplusplus)
     #define DTF_EXPORT extern "C"
 #else
@@ -122,6 +122,7 @@ typedef struct camera_configuration_t{
 /// Get current video output size
 @property (nonatomic, assign, readonly) CGSize videoOutputSize;
 
+@property (nonatomic, assign) BOOL isCameraStop;
 
 /**
  Do not use default NSObject initializer. Use initWithConfig:error: instead.
@@ -165,6 +166,10 @@ typedef struct camera_configuration_t{
 - (BOOL)setWhiteBalanceMode:(AVCaptureWhiteBalanceMode)mode;
 
 - (BOOL)setExposureMode:(AVCaptureExposureMode)mode;
+
+- (void)setWhiteBalanceParam:(DTFChameleonUtilsModel *)cameraParam completionHandler:(void (^ _Nullable)(NSError *error))handler;
+
+- (void)resetVideoZoom;
 
 /**
  Start the capture session.

@@ -22,6 +22,7 @@
 @property (nonatomic, strong) NSMutableArray<UIColor *> *gradientColors;
 @property (nonatomic, assign) CGFloat progress;
 @property (nonatomic, strong) UIColor *progressBarTrackColor;
+@property (nonatomic, assign) BOOL supportCustomUI;
 
 - (void)setProgress:(CGFloat)percent animation:(BOOL)animated;
 - (void)_updateCircularPath;

@@ -1,9 +1,16 @@
 "APBToygerFacade:取消"="Batalkan";
+"APBToygerFacade:取消(引导页)"="Batalkan";
 "APBToygerFacade:再试一次"="Harap coba lagi";
+"APBToygerFacade:再试一次(验证中断)"="Harap coba lagi";
+"APBToygerFacade:再试一次(网络中断)"="Harap coba lagi";
 "APBToygerFacade:退出"="Keluar";
+"APBToygerFacade:退出(无法启动相机)"="Keluar";
+"APBToygerFacade:退出(验证中断)"="Keluar";
 "APBToygerFacade:确定"="OK";
+"APBToygerFacade:确定(引导页)"="OK";
 "APBToygerFacade:继续"="Lanjutkan";
 "APBToygerFacade:我知道了"="OK";
+"APBToygerFacade:我知道了(系统不支持刷脸)"="OK";
 "APBToygerFacade:其他登录方式"="Ubah Metode Logon";
 "APBToygerFacade:刷脸失败"="Pengenalan wajah gagal";
 "APBToygerFacade:当前设备不支持刷脸"="Perangkat Anda tidak mendukung pengenalan wajah";
@@ -14,7 +21,9 @@
 "APBToygerFacade:刷脸仅在iOS7及以上系统可用"="Hanya iOS 7 dan setelahnya yang mendukung pengenalan wajah";
 "APBToygerFacade:系统错误"="Terjadi Kesalahan Sistem";
 "APBToygerFacade:确定退出吗?"="Apakah Anda yakin ingin keluar?";
+"APBToygerFacade:确定退出吗?(引导页)"="Apakah Anda yakin ingin keluar?";
 "APBToygerFacade:露个脸就能通过"="Anda hanya perlu memperlihatkan wajah Anda";
+"APBToygerFacade:露个脸就能通过(引导页)"="Anda hanya perlu memperlihatkan wajah Anda";
 "APBToygerFacade:操作超时"="Waktu operasi habis";
 "APBToygerFacade:正对手机,更容易成功"="Arahkan wajah lurus menghadap ponsel untuk membuat wajah Anda lebih mudah dipindai";
 "APBToygerFacade:本次操作失败"="Operasi gagal";

@@ -49,6 +49,9 @@
 //EKYC OCR确认接口
 - (void)doSendEKYCOCRContentConfrim:(NSDictionary*)params withcompletionBlock:(DTFRpcCompletionBlock)blk ;
 
+//侧信道oss上传
+- (void)doUploadOSSContent:(NSDictionary*)params withcompletionBlock:(DTFRpcCompletionBlock)blk;
+
 // SMS 请求接口
 - (void)getSMSCode:(NSDictionary*)serviceParameters completionBlock:(DTFRpcCompletionBlock)blk;
 

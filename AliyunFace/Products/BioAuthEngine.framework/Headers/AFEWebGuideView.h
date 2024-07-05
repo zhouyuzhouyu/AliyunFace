@@ -10,9 +10,11 @@
 #import <BioAuthEngine/AFEStatusBar.h>
 #import <WebKit/WebKit.h>
 #import "APBToygerRemoteConfig.h"
+#import "DTFUICustom.h"
+
 @protocol AFEWebGuideViewDelegate <NSObject>
 
-- (void)onButtonBegin:(BOOL)suitableType;
+- (void)onButtonBegin:(BOOL)suitableType query:(NSDictionary *)dict;
 - (void)onButtonCancel;
 
 @optional
@@ -22,7 +24,9 @@
 
 @end
 
+@interface AFEWebTopBar: UIView
 
+@end
 
 @interface AFEWebGuideView : UIView <IStatusBarDelegate,WKScriptMessageHandler, WKUIDelegate, WKNavigationDelegate>
 
@@ -31,6 +35,8 @@
 @property(nonatomic, assign)BOOL loaded;
 @property(nonatomic, strong)APBToygerAlertConfig *toygerAlertConfig;
 @property(nonatomic, strong)UIViewController *currentViewController;
+@property(nonatomic, strong)DTFUICustom *customProtocol;
+@property(nonatomic, strong)NSDictionary *alertParam;
 
 - (void)setWebGuideViewDelegate:(id<AFEWebGuideViewDelegate>)webGuideViewDeleage;
 - (void)setURL:(NSURL *)url;

@@ -29,7 +29,7 @@ typedef NS_ENUM(NSUInteger, ZIMResponseCode) {
 @property(nonatomic, strong) NSString* _Nullable deviceToken; //设备token
 @property(nonatomic, strong, nullable) NSString *videoFilePath;  //如果采用视频返照，这个字段返回视频的路径
 @property(nonatomic, strong ,nullable) NSData *imageContent;  //这个字段返回采集照片
-
+@property(nonatomic, strong ,nullable) NSMutableArray *cardImageContent;  //ekyc返回证件array
 @property(nonatomic , strong ,nullable)NSData *faceData; //OCR身份证人像面照片 ，只有在OCR模式下，才有值
 @property(nonatomic , strong ,nullable)NSData *countryData; //OCR身份证国徽面照片，只有在OCR模式下，才有值
 

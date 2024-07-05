@@ -44,7 +44,13 @@
 @property (nonatomic, assign) double widthCoefficient;
 @property (nonatomic, copy) NSDictionary *bottomTipAttrDict;
 @property (nonatomic, copy) NSDictionary *tipAttrDict;
+@property (nonatomic, assign) BOOL supportCustomUI;
+@property (nonatomic, strong) UIView *tipView;
+@property (nonatomic, strong) UIImageView *tipImageView;
+@property (nonatomic, strong) UILabel *tipLabel;
+@property (nonatomic, assign) CGSize tipTextSize;
 
+- (instancetype)initWithSupportCustomUI:(BOOL)supportCustomUI;
 - (void)showPercent:(CGFloat)stage;
 - (void)showtip:(NSString *)tip;
 - (void)showBottomTip:(NSString *)bottomTip;
@@ -63,7 +69,7 @@
 - (void)showStopScanTip:(NSString *)stopScanTip;
 - (void)hideViewList;
 - (void)showViewList;
-
+- (void)_buildShowView;
 - (void)_updateView;
 
 @end

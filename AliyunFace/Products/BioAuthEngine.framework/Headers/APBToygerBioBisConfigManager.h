@@ -33,6 +33,8 @@
 
 - (APBToygerSoluCfg *)solucfg;
 
+- (APBToygerFillBack *)fillback;
+
 - (APBToygerRemoteConfig *)bisConfig;
 
 - (int) sampleMode;

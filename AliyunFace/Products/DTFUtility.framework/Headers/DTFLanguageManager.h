@@ -7,22 +7,33 @@
 //
 
 #import <Foundation/Foundation.h>
+typedef void (^DTFLanguageDownloadCompletionBlock)(NSError * _Nullable error);
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DTFLanguageManager : NSObject
 
-typedef void(^DTFLanguageDownloadCompletionBlock)(NSError *error);
+@property (nonatomic, strong)NSString *ocrResultStr;
+@property (nonatomic, strong)NSString *languageType;
 
 + (instancetype)sharedInstance;
 
 - (BOOL)checkNeedPreload;
-- (BOOL)checkUpdateWithVersion:(NSString *)version;
-- (void)startDownloadWithCompletion:(DTFLanguageDownloadCompletionBlock)completion;
-- (NSString *)getLocalizedStringForKey:(NSString *)key;
-- (NSString *)getMultiFilePath;
-- (NSString *)getMultiJsonFile;
-- (void)setBundlePath:(NSString *)bundlePath;
+- (BOOL)checkUpdateDocWithVersion:(NSString *)version;
+- (BOOL)checkUpdateFaceWithVersion:(NSString *)version;
+- (BOOL)checkUpdateGuideWithVersion:(NSString *)version;
+- (void)startFaceDownloadWithCompletion:(DTFLanguageDownloadCompletionBlock)completion;
+- (void)startDocDownloadWithCompletion:(DTFLanguageDownloadCompletionBlock)completion;
+- (void)startGuideDownloadWithCompletion:(DTFLanguageDownloadCompletionBlock)completion;
+- (NSString *)getCurrentLanguage;
+- (NSString *)getCurrentFullLanguage;
+- (NSString *)getFileWithPath:(NSString *)path fileName:(NSString *)fileName;
+
+- (void)initializeLanguageDictionary;
+
+- (NSString *)faceStringWithKey:(NSString *)key;
+- (NSString *)docStringWithKey:(NSString *)key;
+- (NSString *)guideStringWithKey:(NSString *)key;
 
 @end
 

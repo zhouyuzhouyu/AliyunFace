@@ -11,7 +11,8 @@
 #import <UIKit/UIKit.h>
 #import "ZimModelDownloader.h"
 #import "DTFSDKConfiguration.h"
-
+#import "DTFUICustomConfig.h"
+#import "DTFLanguageCustomConfig.h"
 NS_ASSUME_NONNULL_BEGIN
 #define ZIM_PLATFORM_SETTING_INFO_ALIYUN @"aliyun"
 #define ZIM_PLATFORM_SETTING_INFO_ALITECH @"alitech"
@@ -30,17 +31,34 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong, nullable) NSData *faceData; // add for OCR
 @property(nonatomic, strong, nullable) NSData *countryData;  // add for OCR
 @property(nonatomic, strong, nullable) NSString *imageCount;
+@property(nonatomic, strong, nullable) UIColor *themeColor;
+@property(nonatomic, strong, nullable) NSString *languageURL;
+@property(nonatomic, strong, nullable) NSString *languageDocPath;
+@property(nonatomic, strong, nullable) NSString *languageFacePath;
+@property(nonatomic, strong, nullable) NSString *languageGuidePath;
+@property(nonatomic, strong, nullable) NSString *languageFromApp; //宿主App设置的语言
+@property(nonatomic, strong, nullable) NSString *logUploadServerURL;
+@property(nonatomic, strong, nullable) NSString *facadeBundlePath;
+@property(nonatomic, assign) BOOL replayPermission;
+@property(nonatomic, assign) BOOL isReadLocal;
+@property(nonatomic, strong, nullable) DTFUICustomConfig *uiCustomConfig;
+@property(nonatomic, strong, nullable) DTFLanguageCustomConfig *languageCustomConfig;
+@property(nonatomic, assign) BOOL isShowTipView;
 
 @property(nonatomic, assign) UIDeviceOrientation orientation;
 @property(nonatomic, assign) BOOL returnContent;
 @property(nonatomic, assign) BOOL returnContentUpload;
+@property(nonatomic, strong, nullable) NSMutableArray *EKYCImageArray;
 @property(nonatomic, assign) BOOL simpleFlags; //安全SDK的Flags
 @property(nonatomic, assign) BOOL tempddsFlags;//是否需要做安全加密
 @property(nonatomic, assign) BOOL iPv6Flags;
+@property(nonatomic, assign) BOOL needPermissionToast;//是否需要弹出权限toast
+@property(nonatomic, assign) double permissionToastDuration;//弹出权限toast时间
 
 @property(nonatomic, strong) DTFSDKConfiguration *remoteConfig;
 
 + (DTFConfiguration *)sharedInstance;
+
 
 @end
 

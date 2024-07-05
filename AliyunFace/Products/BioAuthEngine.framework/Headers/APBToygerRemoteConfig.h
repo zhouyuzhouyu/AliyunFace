@@ -19,6 +19,7 @@
 
 @property(nonatomic, strong) APBToygerNavigatePage *navi;
 
+
 @end
 
 /**
@@ -40,6 +41,7 @@
 @property(nonatomic, strong)APBToygerVideo * video;
 @property(nonatomic, copy)NSString *verifyMode;
 @property(nonatomic, copy)NSString *token;
+@property(nonatomic, copy) NSDictionary *controlConfig;
 
 +(APBToygerRemoteConfig *)defaultConfig;
 + (void)loadFromJSON:(NSString *)json toObject:(NSObject*) obj;
@@ -64,11 +66,23 @@
 
 @property(nonatomic, assign)BOOL enable;
 @property(nonatomic, copy)NSString *url;
+@property(nonatomic, assign)BOOL needRareCharUi;
 
 + (APBToygerNavigatePage *)defaultConfig;
 
 @end
 
+/**
+ *   ocr回填确认页相关
+ */
+@interface APBToygerFillBack : NSObject
+
+@property(nonatomic, assign)BOOL enable;
+@property(nonatomic, assign)BOOL editable;
+
++ (APBToygerFillBack *)defaultConfig;
+
+@end
 /**
  *  采集场景配置
  */
@@ -101,7 +115,9 @@
 @property(nonatomic, copy) NSString *docInputMode;
 @property(nonatomic, assign) CGFloat docUIRatio;
 @property(nonatomic, copy) NSString *multiLangVer;
-
+@property(nonatomic, strong) NSMutableDictionary *chameleon;
+@property(nonatomic, assign) BOOL doVideoCapture;
+@property(nonatomic, assign) NSInteger captureFrameLimit;
 + (APBToygerCollect *)defaulConfig;
 
 @end
@@ -178,6 +194,7 @@
 @property(nonatomic, strong)APBToygerAlertConfig * systemErrorAlert;
 @property(nonatomic, strong)APBToygerAlertConfig * cameraNoPermissionAlert;
 @property(nonatomic, strong)APBToygerAlertConfig * exitAlert;
+@property(nonatomic, strong)APBToygerAlertConfig * exitAlertForPermission;
 @property(nonatomic, strong)APBToygerAlertConfig * authorizationAlert;
 @property(nonatomic, strong)APBToygerAlertConfig * failNoRetryAlert;
 

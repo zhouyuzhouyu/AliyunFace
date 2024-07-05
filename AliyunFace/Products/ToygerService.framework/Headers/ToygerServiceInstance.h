@@ -90,7 +90,7 @@
  @return Toyger算法实例
  */
 
-- (instancetype)initWithType:(ToygerServiceType)type andExtInfo:(NSDictionary *)extInfo errorPtr:(NSError **)errorPtr NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithType:(ToygerServiceType)type andExtInfo:(NSDictionary *)extInfo modelTypeArray:(NSMutableArray *)modelTypeArray errorPtr:(NSError **)errorPtr NS_DESIGNATED_INITIALIZER;
 
 #ifdef ZDOC
 /**

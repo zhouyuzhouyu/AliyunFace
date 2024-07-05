@@ -12,16 +12,19 @@
 
 #ifndef SUPPORT_PB
 @interface ZimValidateRequest:NSObject
-@property (nonatomic,strong) NSString* zimId ;
-@property (nonatomic,copy) NSString* zimData ;
-@property(nonatomic, strong) NSDictionary* bizData;
+@property (nonatomic,strong) NSString *zimId ;
+@property (nonatomic,copy) NSString *zimData ;
+@property(nonatomic, strong) NSDictionary *bizData;
 @property (nonatomic,strong)NSString *idString;
 @property (nonatomic,strong)NSString *nameString; 
 @property (nonatomic,strong)NSString *externParam;
-@property(nonatomic, strong) NSDictionary* wishDict;
-@property(nonatomic, strong) NSArray* wishVideoUrl;
-@property(nonatomic, strong) NSArray* wishAudioUrl;
-@property (nonatomic,strong) NSString* originAliyunEncToken;
+@property(nonatomic, strong) NSDictionary *wishDict;
+@property(nonatomic, strong) NSArray *wishVideoUrl;
+@property(nonatomic, strong) NSArray *wishAudioUrl;
+@property (nonatomic,strong) NSString *originAliyunEncToken;
+@property (nonatomic,strong) NSString *rareCharIdString;
+@property (nonatomic,strong) NSString *rareCharNameString;
+@property (nonatomic,assign) BOOL doVideoCapture;
 
 + (Class)bizDataElementClass;
 @end
